@@ -72,6 +72,24 @@ def gepEgyenloP_TobbL_Teszt():
         print("A teszt sikeres.(Gép teszt: Egyenlő pontok több lap)")
     else:
         print("A teszt megbukott. (Gép teszt: Egyenlő pontok több lap)")
+def jatekosNyert_Teszt():
+    jatekosLista = [4, 5, 6, 5]
+    gepLista = [5, 5, 5, 3]
+    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    vartEredmeny = "Játékos nyert"
+    if kapottEredmeny == vartEredmeny:
+        print("A teszt sikeres.(Játékos teszt: Játékosnak több pontja van)")
+    else:
+        print("A teszt megbukott. (Játékos teszt: Játékosnak több pontja van)")
+def gepNyert_Teszt():
+    jatekosLista = [4, 5, 6, 2]
+    gepLista = [5, 5, 5, 3]
+    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    vartEredmeny = "Gép nyert"
+    if kapottEredmeny == vartEredmeny:
+        print("A teszt sikeres.(Gép teszt: Gépnek több pontja van)")
+    else:
+        print("A teszt megbukott. (Gép teszt: Gépnek több pontja van)")
 def dontetlen_Teszt():
     jatekosLista = [4, 5, 6, 3]
     gepLista = [5, 5, 5, 3]
@@ -81,6 +99,7 @@ def dontetlen_Teszt():
         print("A teszt sikeres.(Döntetlen teszt)")
     else:
         print("A teszt megbukott. (Döntetlen teszt)")
+
 def tesztek():
     jatekosNagyobb_H_egy_Teszt()
     jatekosKevesebbP_Teszt()
@@ -88,6 +107,10 @@ def tesztek():
     gepNagyobb_H_egy_Teszt()
     gepKevesebbP_Teszt()
     gepEgyenloP_TobbL_Teszt()
+
+    jatekosNyert_Teszt()
+    gepNyert_Teszt()
+    
     dontetlen_Teszt()
 
 
